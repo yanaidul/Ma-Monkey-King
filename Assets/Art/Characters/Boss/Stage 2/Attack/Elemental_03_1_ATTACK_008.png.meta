@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 130
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -108,7 +108,28 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Elemental_03_1_ATTACK_008_1
+      rect:
+        serializedVersion: 2
+        x: 1633
+        y: 269
+        width: 393
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27283f04248656348b044b50bc60a272
+      internalID: 144695003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +140,22 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Elemental_03_1_ATTACK_008_0: -983192977
+      Elemental_03_1_ATTACK_008_1: 144695003
+      Elemental_03_1_ATTACK_008_10: -1423237611
+      Elemental_03_1_ATTACK_008_11: 485807735
+      Elemental_03_1_ATTACK_008_12: -2016182155
+      Elemental_03_1_ATTACK_008_13: 467480675
+      Elemental_03_1_ATTACK_008_14: 644788166
+      Elemental_03_1_ATTACK_008_2: 1907695829
+      Elemental_03_1_ATTACK_008_3: -178744413
+      Elemental_03_1_ATTACK_008_4: 567429873
+      Elemental_03_1_ATTACK_008_5: -227299940
+      Elemental_03_1_ATTACK_008_6: -494463296
+      Elemental_03_1_ATTACK_008_7: 553401730
+      Elemental_03_1_ATTACK_008_8: -912354782
+      Elemental_03_1_ATTACK_008_9: -2023278717
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
