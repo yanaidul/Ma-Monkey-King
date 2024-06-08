@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10c0adb701cf3394fba4f1f0a43d7978, type: 3}
   m_Name: PlayerData
   m_EditorClassIdentifier: 
-  _totalScore: 0
+  _totalScore: 3
   _unlockedLevel: 1
   _sfxVolume: 4
   _bgmVolume: 4

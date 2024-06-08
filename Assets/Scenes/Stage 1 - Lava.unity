@@ -709,7 +709,7 @@ GameObject:
   - component: {fileID: 142472091}
   - component: {fileID: 142472093}
   - component: {fileID: 142472092}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Collider_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -886,7 +886,7 @@ GameObject:
   - component: {fileID: 188596078}
   - component: {fileID: 188596080}
   - component: {fileID: 188596079}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Collider_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1373,7 +1373,7 @@ GameObject:
   - component: {fileID: 296781437}
   - component: {fileID: 296781439}
   - component: {fileID: 296781438}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Collider_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1956,7 +1956,7 @@ GameObject:
   - component: {fileID: 440629952}
   - component: {fileID: 440629954}
   - component: {fileID: 440629953}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Collider_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3054,7 +3054,7 @@ GameObject:
   - component: {fileID: 668128301}
   - component: {fileID: 668128303}
   - component: {fileID: 668128302}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Collider_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3149,7 +3149,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 696701269}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Flying Platform (Collider)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3932,7 +3932,7 @@ GameObject:
   - component: {fileID: 851715533}
   - component: {fileID: 851715535}
   - component: {fileID: 851715534}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Collider_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4199,7 +4199,7 @@ GameObject:
   - component: {fileID: 885820918}
   - component: {fileID: 885820920}
   - component: {fileID: 885820919}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Collider_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4607,7 +4607,7 @@ GameObject:
   - component: {fileID: 981428627}
   - component: {fileID: 981428629}
   - component: {fileID: 981428628}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Collider_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -141702,7 +141702,7 @@ GameObject:
   - component: {fileID: 1979841722}
   - component: {fileID: 1979841724}
   - component: {fileID: 1979841723}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Collider_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -141799,7 +141799,7 @@ GameObject:
   - component: {fileID: 1983268596}
   - component: {fileID: 1983268598}
   - component: {fileID: 1983268597}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Collider_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -142055,7 +142055,7 @@ GameObject:
   - component: {fileID: 2007063561}
   - component: {fileID: 2007063563}
   - component: {fileID: 2007063562}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Collider_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -145379,6 +145379,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 117708126384016528, guid: 3119e3bb613c8894485f964859472270, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1084142873}
     - target: {fileID: 582966201496060084, guid: 3119e3bb613c8894485f964859472270, type: 3}
       propertyPath: m_Name
       value: UI
@@ -145427,6 +145431,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2108136561}
+    - target: {fileID: 1246084044784574251, guid: 3119e3bb613c8894485f964859472270, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1084142873}
     - target: {fileID: 1285791378559006059, guid: 3119e3bb613c8894485f964859472270, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -145500,6 +145508,10 @@ PrefabInstance:
       value: OnPauseUI
       objectReference: {fileID: 0}
     - target: {fileID: 8397190191186720668, guid: 3119e3bb613c8894485f964859472270, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8397190191404983936, guid: 3119e3bb613c8894485f964859472270, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}

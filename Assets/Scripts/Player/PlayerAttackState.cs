@@ -22,7 +22,6 @@ public class PlayerAttackState : PlayerBaseState
     private void HandleAttack()
     {
         _stateMachine.InputReader.OnPlayerAttackEvent.Raise();
-        _stateMachine.RigidBody.velocity = new Vector2(0, _stateMachine.RigidBody.velocity.y);
         _stateMachine.Animator.Play(AttackAnimationHash);
     }
 
@@ -38,7 +37,6 @@ public class PlayerAttackState : PlayerBaseState
         {
             OnRoamState();
         }
-        
     }
 
     public override void Exit()

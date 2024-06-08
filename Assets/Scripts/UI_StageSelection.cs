@@ -15,18 +15,18 @@ public class UI_StageSelection : MonoBehaviour
             button.interactable = false;
         }
 
-        if(_playerData.UnlockedLevel > 2)
-        {
-            _stageSelectionButtons[2].interactable = true;
-            _stageSelectionButtons[2].transform.GetChild(0).gameObject.SetActive(false);
-        }
+        _stageSelectionButtons[0].interactable = true;
 
-        if(_playerData.UnlockedLevel > 1)
+        if (_playerData.UnlockedLevel > 1)
         {
             _stageSelectionButtons[1].interactable = true;
             _stageSelectionButtons[1].transform.GetChild(0).gameObject.SetActive(false);
         }
 
-        _stageSelectionButtons[0].interactable = true;
+        if (_playerData.UnlockedLevel > 2)
+        {
+            _stageSelectionButtons[2].interactable = true;
+            _stageSelectionButtons[2].transform.GetChild(0).gameObject.SetActive(false);
+        }
     }
 }
