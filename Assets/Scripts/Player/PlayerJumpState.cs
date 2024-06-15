@@ -60,7 +60,7 @@ public class PlayerJumpState : PlayerBaseState
     {
         Vector2 movement = new Vector2();
         movement.x = _stateMachine.MovementDirection.GetDirection() * deltaTime * _stateMachine.MovementSpeed;
-#if UNITY_EDITOR
+#if UNITY_EDITOR || UNITY_STANDALONE_WIN
         movement.x = _stateMachine.InputReader.MovementValue.x * deltaTime * _stateMachine.MovementSpeed;
 #endif
         movement.y = _stateMachine.RigidBody.velocity.y;
