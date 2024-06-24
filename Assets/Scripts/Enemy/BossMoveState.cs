@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class BossMoveState : EnemyBaseState
 {
@@ -8,9 +9,11 @@ public class BossMoveState : EnemyBaseState
     private readonly int MoveAnimationHash = Animator.StringToHash("Move Boss");
     private BossTargetPos _bosTargetPos;
     private Transform _nextTargetPos;
+    private bool _isMoving = false;
 
     public override void Enter()
     {
+        _isMoving = false;
         _stateMachine.animator.Play(MoveAnimationHash);
         if (!_stateMachine.TryGetComponent(out BossTargetPos bosTargetPos)) return;
         _bosTargetPos = bosTargetPos;
@@ -29,21 +32,19 @@ public class BossMoveState : EnemyBaseState
 
     private void HandleMove()
     {
-        if (_stateMachine.enemyDetector.targetInDistance != null)
-        {
-            float distance = Vector2.Distance(_stateMachine.transform.position, _nextTargetPos.position);
+        float distance = Vector2.Distance(_stateMachine.transform.position, _nextTargetPos.position);
 
-            if (distance > _stateMachine.stoppingDistance)
-            {
-                MoveToDestinatedPosition(_nextTargetPos.position);
-                FlipSpriteHandler(_nextTargetPos.position);
-            }
-            else
-            {
-                FlipSpriteHandler(_stateMachine.enemyDetector.targetInDistance.transform.position);
-                _stateMachine.enemyRb.velocity = Vector2.zero;
-                OnBackToAttackState();
-            }
+        if (distance > _stateMachine.stoppingDistance)
+        {
+            MoveToDestinatedPosition(_nextTargetPos.position);
+            FlipSpriteHandler(_nextTargetPos.position);
+        }
+        else
+        {
+            if(_stateMachine.enemyDetector.targetInDistance != null) FlipSpriteHandler(_stateMachine.enemyDetector.targetInDistance.transform.position);
+            else FlipSpriteHandler(-_nextTargetPos.position);
+            _stateMachine.enemyRb.velocity = Vector2.zero;
+            OnBackToAttackState();
         }
     }
     private void FlipSpriteHandler(Vector3 destinatedPos)
