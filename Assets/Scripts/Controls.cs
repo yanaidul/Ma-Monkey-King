@@ -59,7 +59,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""bb28342a-81c6-4cc9-8758-755178052eab"",
-                    ""path"": ""<Keyboard>/x"",
+                    ""path"": ""<Mouse>/leftButton"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""All Control Scheme"",
@@ -70,7 +70,7 @@ public partial class @Controls: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""f00c436e-98f8-4acf-a175-6de3b58841f2"",
-                    ""path"": ""<Keyboard>/z"",
+                    ""path"": ""<Keyboard>/space"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""All Control Scheme"",
